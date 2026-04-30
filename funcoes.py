@@ -27,3 +27,12 @@ def remover_dado(dadosrolados, dadosguardados, indice):
     
     # retorna as listas atualizadas
     return [dadosrolados, dadosguardados]
+
+def calcula_pontos_regra_simples(dados):
+    
+    pontuacao = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+    
+    for valor in dados:
+        pontuacao[valor] += valor
+        
+    return pontuacao
