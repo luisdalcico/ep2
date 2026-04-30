@@ -45,3 +45,14 @@ def calcula_pontos_soma(dados):
         somatotal += valor
         
     return somatotal
+
+def calcula_pontos_sequencia_baixa(dados):
+    
+    for inicio in [1, 2, 3]:
+        if (inicio in dados and 
+            (inicio + 1) in dados and 
+            (inicio + 2) in dados and 
+            (inicio + 3) in dados):
+            return 15
+            
+    return 0
