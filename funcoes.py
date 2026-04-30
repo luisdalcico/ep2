@@ -17,3 +17,13 @@ def guardar_dado(dadosrolados, dadosguardados, indice):
     dadosguardados.append(dado)
     
     return [dadosrolados, dadosguardados]
+
+def remover_dado(dadosrolados, dadosguardados, indice):
+    # remove o dado do estoque
+    dado = dadosguardados.pop(indice)
+    
+    # devolve para os dados rolados
+    dadosrolados.append(dado)
+    
+    # retorna as listas atualizadas
+    return [dadosrolados, dadosguardados]
