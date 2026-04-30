@@ -36,3 +36,12 @@ def calcula_pontos_regra_simples(dados):
         pontuacao[valor] += valor
         
     return pontuacao
+
+def calcula_pontos_soma(dados):
+    
+    somatotal = 0
+    
+    for valor in dados:
+        somatotal += valor
+        
+    return somatotal
