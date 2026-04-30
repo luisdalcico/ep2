@@ -9,3 +9,11 @@ def rolar_dados(quantidade):
         dados_rolados.append(valor)
         
     return dados_rolados
+
+def guardar_dado(dadosrolados, dadosguardados, indice):
+
+    dado = dadosrolados.pop(indice)
+    
+    dadosguardados.append(dado)
+    
+    return [dadosrolados, dadosguardados]
