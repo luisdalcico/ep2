@@ -68,3 +68,28 @@ def calcula_pontos_sequencia_alta(dados):
             return 30
             
     return 0
+
+def calcula_pontos_full_house(dados):
+    
+    frequencias = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+    
+    for valor in dados:
+        frequencias[valor] += 1
+        
+    temtrio = False
+    tempar = False
+    
+    for face in range(1, 7):
+        quantidade = frequencias[face]
+        if quantidade == 3:
+            temtrio = True
+        elif quantidade == 2:
+            tempar = True
+            
+    if temtrio and tempar:
+        somatotal = 0
+        for valordado in dados:
+            somatotal += valordado
+        return somatotal
+        
+    return 0
