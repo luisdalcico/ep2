@@ -114,3 +114,16 @@ def calcula_pontos_quadra(dados):
         return somatotal
         
     return 0
+
+def calcula_pontos_quina(dados):
+    
+    frequencias = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+    
+    for face_rolada in dados:
+        frequencias[face_rolada] += 1
+        
+    for face in range(1, 7):
+        if frequencias[face] >= 5:
+            return 50
+            
+    return 0
