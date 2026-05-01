@@ -1,4 +1,4 @@
-from funcoes import calcula_pontos_regra_simples, calcula_pontos_sequencia_baixa, calcula_pontos_soma, remover_dado, rolar_dados
+from funcoes import calcula_pontos_regra_simples, calcula_pontos_sequencia_alta, calcula_pontos_sequencia_baixa, calcula_pontos_soma, remover_dado, rolar_dados
 from funcoes import guardar_dado    
 
 print(rolar_dados(5))
@@ -22,3 +22,7 @@ print(calcula_pontos_soma([2, 3, 4, 5, 2]))
 print(calcula_pontos_sequencia_baixa([5, 3, 4, 2, 2]))
 
 print(calcula_pontos_sequencia_baixa([2, 3, 4, 6, 2]))
+
+print(calcula_pontos_sequencia_alta([5, 4, 1, 3, 2, 1]))
+
+print(calcula_pontos_sequencia_alta([2, 3, 4, 6, 2]))

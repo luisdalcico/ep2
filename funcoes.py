@@ -56,3 +56,15 @@ def calcula_pontos_sequencia_baixa(dados):
             return 15
             
     return 0
+
+def calcula_pontos_sequencia_alta(dados):
+    
+    for inicio in [1, 2]:
+        if (inicio in dados and 
+            (inicio + 1) in dados and 
+            (inicio + 2) in dados and 
+            (inicio + 3) in dados and 
+            (inicio + 4) in dados):
+            return 30
+            
+    return 0
