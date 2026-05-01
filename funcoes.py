@@ -140,3 +140,22 @@ def calcula_pontos_regra_avancada(dados):
     }
     
     return pontuacao_total
+
+def faz_jogada(dados, categoria, cartela_de_pontos):
+    
+    
+    pontos_simples = calcula_pontos_regra_simples(dados)
+    pontos_avancada = calcula_pontos_regra_avancada(dados)
+    
+    
+    if categoria in pontos_avancada:
+        
+        valor_obtido = pontos_avancada[categoria]
+        cartela_de_pontos['regra_avancada'][categoria] = valor_obtido
+    else:
+        
+        categoria_int = int(categoria)
+        valor_obtido = pontos_simples[categoria_int]
+        cartela_de_pontos['regra_simples'][categoria_int] = valor_obtido
+        
+    return cartela_de_pontos
