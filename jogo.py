@@ -1,4 +1,4 @@
-from funcoes import calcula_pontos_full_house, calcula_pontos_regra_simples, calcula_pontos_sequencia_alta, calcula_pontos_sequencia_baixa, calcula_pontos_soma, remover_dado, rolar_dados
+from funcoes import calcula_pontos_full_house, calcula_pontos_quadra, calcula_pontos_regra_simples, calcula_pontos_sequencia_alta, calcula_pontos_sequencia_baixa, calcula_pontos_soma, remover_dado, rolar_dados
 from funcoes import guardar_dado    
 
 print(rolar_dados(5))
@@ -31,3 +31,6 @@ print(calcula_pontos_full_house([5, 2, 5, 5, 2]))
 
 print(calcula_pontos_full_house([5, 5, 5, 5, 2]))
 
+print(calcula_pontos_quadra([5, 2, 5, 5, 5, 1]))
+
+print(calcula_pontos_quadra([5, 2, 5, 5, 2]))

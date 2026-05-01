@@ -93,3 +93,24 @@ def calcula_pontos_full_house(dados):
         return somatotal
         
     return 0
+
+def calcula_pontos_quadra(dados):
+    
+    frequencias = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+    
+    for valor in dados:
+        frequencias[valor] += 1
+        
+    possuiquadra = False
+    
+    for face in range(1, 7):
+        if frequencias[face] >= 4:
+            possuiquadra = True
+            
+    if possuiquadra:
+        somatotal = 0
+        for valordado in dados:
+            somatotal += valordado
+        return somatotal
+        
+    return 0
